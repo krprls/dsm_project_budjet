@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Budget</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 760px; margin: 24px auto; padding: 0 16px; color: #222; background: #fafafa; }
+  h1 { font-size: 1.4rem; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+  th, td { padding: 6px 4px; text-align: left; border-bottom: 1px solid #ddd; }
+  td.cost, th.cost { text-align: right; }
+  input, select, button { font: inherit; padding: 4px 6px; }
+  input[type=number] { width: 80px; }
+  input.name { width: 100%; box-sizing: border-box; }
+  button { cursor: pointer; }
+  .summary { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 12px 16px; margin: 16px 0; }
+  .summary p { margin: 4px 0; font-size: 1.1rem; }
+  .over { color: #c0392b; font-weight: bold; }
+  .ok { color: #1e8449; font-weight: bold; }
+  .bar-row { display: flex; align-items: center; gap: 8px; margin: 4px 0; font-size: 0.9rem; }
+  .bar-label { width: 140px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .bar-track { flex: 1; background: #eee; border-radius: 4px; height: 18px; }
+  .bar-row > span:last-child { width: 80px; text-align: right; }
+  .bar { height: 100%; border-radius: 4px; }
+  .fixed { background: #3498db; }
+  .hours { background: #e67e22; }
+</style>
+</head>
+<body>
+<h1>Project Budget</h1>
+
+<label>My budget: <input type="number" id="budget" value="5000" min="0"></label>
+
+<table>
+  <thead>
+    <tr><th>Item</th><th>Type</th><th>Qty / Hours</th><th>Price / Rate</th><th class="cost">Cost</th><th></th></tr>
+  </thead>
+  <tbody id="rows"></tbody>
+</table>
+<button onclick="addRow()">+ Add item</button>
+
+<div class="summary">
+  <p>Budget: <span id="sBudget"></span></p>
+  <p>Spent: <span id="sSpent"></span></p>
+  <p>Remaining: <span id="sLeft"></span></p>
+</div>
+
+<h2 style="font-size:1.1rem">Where the money goes</h2>
+<div id="chart"></div>
+<p style="font-size:0.85rem;color:#666">Blue = fixed cost, orange = hours.</p>
+
+<script>
+  // Starter rows so you can see how it works. Edit or delete them.
+  const start = [
+    { name: "Laptop", type: "fixed", qty: 1, price: 900 },
+    { name: "Design work", type: "hours", qty: 20, price: 50 },
+    { name: "Software licence", type: "fixed", qty: 2, price: 120 }
+  ];
+
+  const money = n => n.toFixed(2);
+
+  function addRow(item = { name: "", type: "fixed", qty: 1, price: 0 }) {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td><input class="name" placeholder="What is it?"></td>
+      <td><select><option value="fixed">Fixed cost</option><option value="hours">Hours</option></select></td>
+      <td><input type="number" min="0" step="any"></td>
+      <td><input type="number" min="0" step="any"></td>
+      <td class="cost"></td>
+      <td><button title="Remove">✕</button></td>`;
+    const [name, type, qty, price] = tr.querySelectorAll("input, select");
+    name.value = item.name; type.value = item.type; qty.value = item.qty; price.value = item.price;
+    tr.querySelector("button").onclick = () => { tr.remove(); update(); };
+    tr.oninput = update;
+    document.getElementById("rows").appendChild(tr);
+    update();
+  }
+
+  function update() {
+    const items = [...document.querySelectorAll("#rows tr")].map(tr => {
+      const [name, type, qty, price] = tr.querySelectorAll("input, select");
+      const cost = (Number(qty.value) || 0) * (Number(price.value) || 0);
+      tr.querySelector(".cost").textContent = money(cost);
+      return { name: name.value || "(no name)", type: type.value, cost };
+    });
+
+    const budget = Number(document.getElementById("budget").value) || 0;
+    const spent = items.reduce((sum, i) => sum + i.cost, 0);
+    const left = budget - spent;
+
+    document.getElementById("sBudget").textContent = money(budget);
+    document.getElementById("sSpent").textContent = money(spent);
+    const sLeft = document.getElementById("sLeft");
+    sLeft.textContent = left < 0 ? `${money(left)} (over budget!)` : money(left);
+    sLeft.className = left < 0 ? "over" : "ok";
+
+    // Bar chart: each bar's width is its share of the budget (or of spending, if that is bigger).
+    const scale = Math.max(budget, spent) || 1;
+    document.getElementById("chart").innerHTML = items.map(i => `
+      <div class="bar-row">
+        <span class="bar-label"></span>
+        <div class="bar-track"><div class="bar ${i.type}" style="width:${(i.cost / scale) * 100}%"></div></div>
+        <span>${money(i.cost)}</span>
+      </div>`).join("");
+    // Set labels as text so typed names are shown safely.
+    document.querySelectorAll("#chart .bar-label").forEach((el, n) => el.textContent = items[n].name);
+  }
+
+  document.getElementById("budget").oninput = update;
+  start.forEach(addRow);
+</script>
+</body>
+</html>

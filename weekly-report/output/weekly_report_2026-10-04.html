@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Brightleaf Weekly Report</title>
+<style>
+  @page { size: A4; margin: 14mm 14mm 12mm 14mm; }
+  * { box-sizing: border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; line-height: 1.4; color: #111; background: #fff; margin: 0; }
+  .page { max-width: 182mm; margin: 0 auto; }
+  header { border-bottom: 2px solid #111; padding-bottom: 6px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: flex-end; }
+  h1 { font-size: 18pt; margin: 0; }
+  .meta { font-size: 9.5pt; text-align: right; color: #333; }
+  h2 { font-size: 11.5pt; margin: 14px 0 6px; text-transform: uppercase; letter-spacing: 0.04em; border-bottom: 1px solid #999; padding-bottom: 2px; }
+  .tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .tile { border: 1px solid #555; border-radius: 4px; padding: 7px 9px; }
+  .tile .num { font-size: 17pt; font-weight: bold; line-height: 1.15; }
+  .tile .label { font-size: 9pt; color: #333; }
+  .tile .chg { font-size: 9pt; font-weight: bold; margin-top: 2px; }
+  .up-good { color: #1a7f37; } .down-bad { color: #c62828; } .up-bad { color: #c62828; } .neutral { color: #333; font-weight: normal; }
+  ul { margin: 0; padding-left: 18px; }
+  li { margin: 3px 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 9.5pt; }
+  th, td { border: 1px solid #888; padding: 4px 6px; text-align: left; vertical-align: top; }
+  th { background: #eee; }
+  td.nowrap { white-space: nowrap; }
+  .note { font-size: 9pt; color: #333; margin-top: 4px; }
+  footer { margin-top: 14px; border-top: 1px solid #999; padding-top: 5px; font-size: 9pt; color: #333; }
+</style>
+</head>
+<body>
+<div class="page">
+<header>
+  <h1>Brightleaf Weekly Report</h1>
+  <div class="meta">Period: September 2026 (vs August); Q3 = Jul&ndash;Sep 2026<br>Report date: 4 October 2026</div>
+</header>
+
+<h2>Key numbers</h2>
+<div class="tiles">
+  <div class="tile"><div class="num">3,887</div><div class="label">Units sold, Sep</div><div class="chg up-good">&#9650; +3.1% vs Aug (3,771)</div></div>
+  <div class="tile"><div class="num">Rs 14,08,963</div><div class="label">Gross revenue, Sep</div><div class="chg down-bad">&#9660; &minus;0.7% vs Aug (Rs 14,18,429)</div></div>
+  <div class="tile"><div class="num">Rs 362.48</div><div class="label">Average price per unit, Sep</div><div class="chg down-bad">&#9660; &minus;3.6% vs Aug (Rs 376.14)</div></div>
+  <div class="tile"><div class="num">2.47%</div><div class="label">Returns rate, Sep</div><div class="chg up-bad">&#9650; +0.08 pp vs Aug (2.39%) (worse)</div></div>
+  <div class="tile"><div class="num">103.5%</div><div class="label">Q3 units vs Q3 target (to 30 Sep)</div><div class="chg neutral">11,177 of 10,800 units (full quarter)</div></div>
+  <div class="tile"><div class="num">3.80 / 5</div><div class="label">Avg feedback rating, Aug vs Jul*</div><div class="chg up-good">&#9650; +0.50 vs Jul (3.30), n=10 each</div></div>
+</div>
+<div class="note">* No September feedback: the 10 September comments were copies of July comments and were removed.</div>
+
+<h2>Top problems</h2>
+<ul>
+  <li><b>Darjeeling stockout:</b> Sep units <b>&minus;36.7%</b>; Q3 <b>329 units short</b> of target (78.1%).&dagger;</li>
+  <li><b>Chamomile Calm, Mumbai:</b> returns <b>9.05%</b> vs 1.99% elsewhere; damaged boxes, cause unknown.</li>
+  <li><b>Slow support:</b> replies reportedly <b>3&ndash;4 days</b>; no date agreed for the under-24-hour goal.</li>
+  <li><b>Late deliveries:</b> <b>2 of 20</b> comments (July), incl. one paid express order.</li>
+  <li><b>Kahwa launch (15 Nov):</b> no stock date yet; <b>Rs 6,59,000</b> of 30-day revenue at risk (est.).</li>
+</ul>
+
+<h2>Actions (approved)</h2>
+<table>
+  <tr><th>#</th><th>Action</th><th>Owner</th><th>Due</th></tr>
+  <tr><td>A1</td><td>Get a written Kahwa stock arrival date from the supplier and share it with Aisha</td><td>Rohan</td><td class="nowrap">12 Oct 2026</td></tr>
+  <tr><td>A2</td><td>Split 2 weeks of Chamomile Calm Mumbai orders between thin and thicker carton (same courier); compare damage and returns</td><td>Rohan</td><td class="nowrap">Start 12 Oct,<br>results 23 Oct 2026</td></tr>
+  <tr><td>A3</td><td>If Darjeeling supplier has not confirmed by 20 Oct, place a first order with the best backup supplier</td><td>Rohan</td><td class="nowrap">23 Oct 2026</td></tr>
+  <tr><td>A4</td><td>Start a weekly log of support ticket volume and median reply time; propose a date for the under-24-hour target</td><td>Dev</td><td class="nowrap">12 Oct 2026</td></tr>
+  <tr><td>A5</td><td>Write a Kahwa launch-week FAQ and saved replies, with content from Aisha</td><td>Dev</td><td class="nowrap">28 Oct 2026</td></tr>
+</table>
+
+<h2>Decisions needed</h2>
+<ul>
+  <li><b>Kahwa pre-orders:</b> open on 1 Nov, or wait until stock is in the warehouse? Meera, with Aisha and Rohan, by <b>16 Oct</b>.</li>
+  <li><b>Mumbai packaging:</b> ship Mumbai orders in the thicker carton (Rs 14 more per box)? Rohan and Aisha (Meera breaks a tie), by <b>26 Oct</b>.</li>
+  <li><b>Backup Darjeeling supplier:</b> add one for the festive season if the current supplier misses 20 Oct? Meera and Rohan, by <b>21 Oct</b>.</li>
+</ul>
+
+<div class="note" style="margin-top:10px">&dagger; Date mismatch: the two Darjeeling out-of-stock complaints (C1119, C1145) are dated July, while the review and meeting notes place the stockout in September. They were kept as recorded.</div>
+
+<footer>Sources: work/03_kpis.json, work/03_kpis.md, work/04_problems.md, work/05_actions.md. Data cleaning notes: work/02_cleaning_log.md</footer>
+</div>
+</body>
+</html>

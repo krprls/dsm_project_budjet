@@ -1,0 +1,31 @@
+date,customer_id,city,product,rating,channel,comment,suspected_duplicate,source_row
+2026-07-02,C1041,Bengaluru,Masala Chai Blend,5,Website,Best chai I have had outside my own kitchen. Ordering again.,"yes: same comment as C1301 (2026-09-08, Delhi NCR)",1
+2026-07-02,C1158,Bengaluru,Assam Breakfast,4,Website,Strong and fresh. Delivery took six days though.,"yes: same comment as C1418 (2026-09-08, Delhi NCR)",10
+2026-07-05,C1054,Mumbai,Darjeeling First Flush,2,Email,Paid for express delivery and it still came late.,"yes: same comment as C1314 (2026-09-11, Bengaluru)",2
+2026-07-08,C1067,Delhi NCR,Assam Breakfast,3,Email,Support took four days to reply about my refund.,"yes: same comment as C1327 (2026-09-14, Mumbai)",3
+2026-07-11,C1080,Mumbai,Chamomile Calm,2,Website,Box arrived crushed and two sachets were torn open.,"yes: same comment as C1340 (2026-09-17, Mumbai)",4
+2026-07-14,C1093,Mumbai,Masala Chai Blend,4,WhatsApp,Great taste. A subscription option would be useful.,"yes: same comment as C1353 (2026-09-20, Bengaluru)",5
+2026-07-17,C1106,Delhi NCR,Masala Chai Blend,5,Website,Please launch a monthly subscription. I reorder every month anyway.,"yes: same comment as C1366 (2026-09-23, Mumbai)",6
+2026-07-20,C1119,Bengaluru,Darjeeling First Flush,3,Instagram,Loved it but it has been out of stock for three weeks.,"yes: same comment as C1379 (2026-09-26, Delhi NCR)",7
+2026-07-23,C1132,Mumbai,Chamomile Calm,4,Website,Helps me sleep. A bit expensive for 20 sachets.,"yes: same comment as C1392 (2026-09-02, Bengaluru)",8
+2026-07-26,C1145,Delhi NCR,Darjeeling First Flush,1,WhatsApp,Order cancelled after a week because of no stock. Disappointed.,"yes: same comment as C1405 (2026-09-05, Mumbai)",9
+2026-08-02,C1275,Bengaluru,Assam Breakfast,4,Website,Good value. Would like a larger 500 g pack.,,19
+2026-08-05,C1171,Mumbai,Assam Breakfast,5,Website,My daily tea now. Quick delivery this time.,,11
+2026-08-05,C1288,Mumbai,Masala Chai Blend,3,Website,Tasty but too much ginger for me.,,20
+2026-08-08,C1184,Delhi NCR,Chamomile Calm,5,Website,Lovely flavour and it arrived on time.,,12
+2026-08-11,C1197,Mumbai,Chamomile Calm,1,WhatsApp,Second time the packaging was damaged. Please fix this.,,13
+2026-08-14,C1210,Mumbai,Darjeeling First Flush,5,Email,"Premium quality, worth the price.",,14
+2026-08-17,C1223,Delhi NCR,Assam Breakfast,4,Instagram,Nice packaging and a strong brew.,,15
+2026-08-20,C1236,Bengaluru,Masala Chai Blend,5,Instagram,Gifted it to my team and everyone asked where to buy it.,,16
+2026-08-23,C1249,Mumbai,Chamomile Calm,2,Instagram,Nice tea but the outer box was wet and dented.,,17
+2026-08-26,C1262,Delhi NCR,Masala Chai Blend,4,Email,Would love a less sweet version.,,18
+2026-09-02,C1392,Bengaluru,Chamomile Calm,4,Website,Helps me sleep. A bit expensive for 20 sachets.,"yes: same comment as C1132 (2026-07-23, Mumbai)",28
+2026-09-05,C1405,Mumbai,Darjeeling First Flush,1,WhatsApp,Order cancelled after a week because of no stock. Disappointed.,"yes: same comment as C1145 (2026-07-26, Delhi NCR)",29
+2026-09-08,C1301,Delhi NCR,Masala Chai Blend,5,Website,Best chai I have had outside my own kitchen. Ordering again.,"yes: same comment as C1041 (2026-07-02, Bengaluru)",21
+2026-09-08,C1418,Delhi NCR,Assam Breakfast,4,Website,Strong and fresh. Delivery took six days though.,"yes: same comment as C1158 (2026-07-02, Bengaluru)",30
+2026-09-11,C1314,Bengaluru,Darjeeling First Flush,2,Email,Paid for express delivery and it still came late.,"yes: same comment as C1054 (2026-07-05, Mumbai)",22
+2026-09-14,C1327,Mumbai,Assam Breakfast,3,Email,Support took four days to reply about my refund.,"yes: same comment as C1067 (2026-07-08, Delhi NCR)",23
+2026-09-17,C1340,Mumbai,Chamomile Calm,2,Website,Box arrived crushed and two sachets were torn open.,"yes: same comment as C1080 (2026-07-11, Mumbai)",24
+2026-09-20,C1353,Bengaluru,Masala Chai Blend,4,WhatsApp,Great taste. A subscription option would be useful.,"yes: same comment as C1093 (2026-07-14, Mumbai)",25
+2026-09-23,C1366,Mumbai,Masala Chai Blend,5,Website,Please launch a monthly subscription. I reorder every month anyway.,"yes: same comment as C1106 (2026-07-17, Delhi NCR)",26
+2026-09-26,C1379,Delhi NCR,Darjeeling First Flush,3,Instagram,Loved it but it has been out of stock for three weeks.,"yes: same comment as C1119 (2026-07-20, Bengaluru)",27

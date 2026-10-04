@@ -1,0 +1,37 @@
+month_start,Month,Product,City,Units sold,Revenue (Rs),Units returned
+2026-07-01,July,Assam Breakfast,Bengaluru,420,146580,8
+2026-07-01,July,Assam Breakfast,Mumbai,357,124593,7
+2026-07-01,July,Assam Breakfast,Delhi NCR,294,102606,6
+2026-07-01,July,Darjeeling First Flush,Bengaluru,180,107820,4
+2026-07-01,July,Darjeeling First Flush,Mumbai,153,91647,3
+2026-07-01,July,Darjeeling First Flush,Delhi NCR,126,75474,3
+2026-07-01,July,Masala Chai Blend,Bengaluru,520,155480,10
+2026-07-01,July,Masala Chai Blend,Mumbai,442,132158,9
+2026-07-01,July,Masala Chai Blend,Delhi NCR,364,108836,7
+2026-07-01,July,Chamomile Calm,Bengaluru,260,116740,5
+2026-07-01,July,Chamomile Calm,Mumbai,221,99229,20
+2026-07-01,July,Chamomile Calm,Delhi NCR,182,81718,4
+2026-08-01,August,Assam Breakfast,Bengaluru,437,152513,9
+2026-08-01,August,Assam Breakfast,Mumbai,371,129479,7
+2026-08-01,August,Assam Breakfast,Delhi NCR,306,106794,6
+2026-08-01,August,Darjeeling First Flush,Bengaluru,171,102429,3
+2026-08-01,August,Darjeeling First Flush,Mumbai,145,86855,3
+2026-08-01,August,Darjeeling First Flush,Delhi NCR,120,71880,2
+2026-08-01,August,Masala Chai Blend,Bengaluru,598,178802,12
+2026-08-01,August,Masala Chai Blend,Mumbai,508,151892,10
+2026-08-01,August,Masala Chai Blend,Delhi NCR,419,125281,8
+2026-08-01,August,Chamomile Calm,Bengaluru,273,122577,5
+2026-08-01,August,Chamomile Calm,Mumbai,232,104168,21
+2026-08-01,August,Chamomile Calm,Delhi NCR,191,85759,4
+2026-09-01,September,Assam Breakfast,Bengaluru,428,149372,9
+2026-09-01,September,Assam Breakfast,Mumbai,364,127036,7
+2026-09-01,September,Assam Breakfast,Delhi NCR,300,104700,6
+2026-09-01,September,Darjeeling First Flush,Bengaluru,108,64692,2
+2026-09-01,September,Darjeeling First Flush,Mumbai,92,55108,2
+2026-09-01,September,Darjeeling First Flush,Delhi NCR,76,45524,2
+2026-09-01,September,Masala Chai Blend,Bengaluru,702,209898,14
+2026-09-01,September,Masala Chai Blend,Mumbai,597,178503,12
+2026-09-01,September,Masala Chai Blend,Delhi NCR,491,146809,10
+2026-09-01,September,Chamomile Calm,Bengaluru,286,128414,6
+2026-09-01,September,Chamomile Calm,Mumbai,243,109107,22
+2026-09-01,September,Chamomile Calm,Delhi NCR,200,89800,4

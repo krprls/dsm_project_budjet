@@ -1,0 +1,90 @@
+{
+  "run_date": "2026-10-04",
+  "latest_period": "2026-09",
+  "previous_period": "2026-08",
+  "revenue_basis": "gross",
+  "headline": {
+    "units_sold": {
+      "latest": 3887,
+      "previous": 3771,
+      "change_pct": 3.1
+    },
+    "gross_revenue_rs": {
+      "latest": 1408963,
+      "previous": 1418429,
+      "change_pct": -0.7
+    },
+    "avg_price_per_unit_rs": {
+      "latest": 362.48,
+      "previous": 376.14,
+      "change_pct": -3.6
+    },
+    "returns_rate_pct": {
+      "latest": 2.47,
+      "previous": 2.39,
+      "change_pp": 0.08
+    },
+    "q3_pct_of_unit_target": {
+      "latest": 103.5,
+      "previous_cumulative_end_aug": 67.5,
+      "change_pp": 36.0
+    },
+    "avg_rating": {
+      "latest_month_with_feedback": "2026-08",
+      "latest": 3.8,
+      "previous": 3.3,
+      "change": 0.5,
+      "n_latest": 10,
+      "n_previous": 10,
+      "note": "No September feedback after dropping the 10 September copies"
+    }
+  },
+  "q3_totals": {
+    "units": 11177,
+    "gross_revenue_rs": 4170273,
+    "units_returned": 272,
+    "returns_rate_pct": 2.43,
+    "avg_price_rs": 373.11
+  },
+  "pct_of_target_by_product": {
+    "Assam Breakfast": 99.3,
+    "Darjeeling First Flush": 78.1,
+    "Masala Chai Blend": 116.0,
+    "Chamomile Calm": 104.4
+  },
+  "units_sep_vs_aug_pct_by_product": {
+    "Assam Breakfast": -2.0,
+    "Darjeeling First Flush": -36.7,
+    "Masala Chai Blend": 17.4,
+    "Chamomile Calm": 4.7
+  },
+  "returns_rate_chamomile_mumbai_q3_pct": 9.05,
+  "low_reviews_1_2": 5,
+  "feedback_rows_used": 20,
+  "top_themes": {
+    "product request": 4,
+    "packaging": 3,
+    "delivery": 2,
+    "stock": 2,
+    "support": 1,
+    "price": 1,
+    "other (taste)": 1
+  },
+  "excluded_rows": {
+    "feedback.csv": [
+      "C1392",
+      "C1405",
+      "C1301",
+      "C1418",
+      "C1314",
+      "C1327",
+      "C1340",
+      "C1353",
+      "C1366",
+      "C1379"
+    ]
+  },
+  "flags_for_report": [
+    "C1119 and C1145 (Darjeeling out-of-stock complaints) are dated July but the stockout was in September; kept per human decision."
+  ]
+}
